@@ -1,8 +1,8 @@
 <div class="container-fluid">
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <ul class="navbar-nav">
-      <li class="nav-item" *ngFor="let val of navlist">
-        <a class="nav-link me-8">{{ val }}</a>
+      <li class="nav-item p-4" *ngFor="let val of navList">
+        <a class="nav-link me-5"  (click)="navigateTo(val)">{{ val }}</a>
       </li>
     </ul>
   </nav>
